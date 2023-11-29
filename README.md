@@ -17,3 +17,11 @@ GA unit 1 project
 //create a function that allows a checker to move one tile in any direction except the border of the gameboard and other chekers.
 //create a function that allows checkers to 'jump' enemy pieces and 'take' those pieces
 //create a function that recognizes when theres no pieces left for a player, the opther player wins, and display who won
+//**********User stories*************//
+//as a user, i want to be able to click on the checkers board to make a move
+//as a user, i want to be able to see my checker pieces move on the board
+//as a user, i want to be able to take my opponents pieces when i take the enemy players checkers
+//as a user, i want to be able to win the game
+//as a user, i want to be able to enjoy experience with good design
+//***************wireframe***************//
+NOT SURE HOW TO ADD MY SCREENSHOT HERE, BUT I HAVE THE SCREENSHOT ON HAND
