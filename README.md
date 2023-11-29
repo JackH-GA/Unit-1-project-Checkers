@@ -25,3 +25,4 @@ GA unit 1 project
 //as a user, i want to be able to enjoy experience with good design
 //***************wireframe***************//
 NOT SURE HOW TO ADD MY SCREENSHOT HERE, BUT I HAVE THE SCREENSHOT ON HAND
+![wireframe](imgs/Screenshot%202023-11-28%20211401.png)
