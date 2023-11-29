@@ -4,7 +4,7 @@ GA unit 1 project
 - html code the container(playingboard), the pieces, the player nameplates, the checkers title, and the menu for saying who goes next
 - use CSS styles to stylize the objects and give them a more polished feeling
 - use flex and grid to nicely center everything in css
-## javascript
+- **javascript**
 - create an array that can be iterated over to either show or hide a checker piece
 - match the array to specific grid locations on the board
 - create a function that can add and remove checkers to given tiles based on the stored array data
