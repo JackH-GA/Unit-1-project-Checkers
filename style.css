@@ -4,15 +4,27 @@
 
 body {
     margin: 0;
+    padding: 15%;
     font-family: Helvetica;
     /* height: 100vh; */
     background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-areas: 
+    h1,
+    playerTurn, 
+    player1,
+    checkBoard,
+    player2
 }
 
-gameName {
+#gameName {
     display: grid;
     flex-direction: center;
     justify-content: center;
+    background-color: rgb(79, 121, 27);
 }
 
 player1 {
@@ -25,6 +37,7 @@ player2{
     display: grid;
     flex-direction: center;
     justify-content: center;
+    padding: 20px;
 }
 
 checkBoard {
@@ -36,7 +49,6 @@ checkBoard {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 25%;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     background-color: rgb(139, 13, 13);
@@ -48,13 +60,13 @@ checkBoard {
     c0r4, c1r4, c2r4, c3r4, c4r4, c5r4, c6r4, c7r4,
     c0r5, c1r5, c2r5, c3r5, c4r5, c5r5, c6r5, c7r5,
     c0r6, c1r6, c2r6, c3r6, c4r6, c5r6, c6r6, c7r6,
-    c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7;
+    c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7
 }
 
-checkBoard.sqaure {
-    height: 40px;
-    width: 40px;
-    color: red;
+checkBoard #square {
+    height: 58px;
+    width: 58px;
+    /* color: red; */
     display: grid;
     display: flex;
     justify-content: center;
@@ -71,9 +83,9 @@ c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7
 }
 
 .red {
-
+    background-color: red;
 }
 
 .black {
-    
+    background-color: black;
 }
