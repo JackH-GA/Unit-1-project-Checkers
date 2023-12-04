@@ -1,4 +1,7 @@
 console.log('script is running')
+const checkBoard = document.querySelector("#checkBoard")
+const playerDisplay = document.querySelector("#player")
+const infoDisplay = document.querySelector("#info-display")
 
 let checkArr = [
     [c0r0, c1r0, c2r0, c3r0, c4r0, c5r0, c6r0, c7r0]
@@ -10,4 +13,8 @@ let checkArr = [
     [c0r6, c1r6, c2r6, c3r6, c4r6, c5r6, c6r6, c7r6]
     [c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7]
 ]
+
+function createPiece() {
+    
+}
 

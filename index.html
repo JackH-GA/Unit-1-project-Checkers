@@ -5,76 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkers!</title>
     <link href='style.css' rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
 </head>
 <body>
-    <chessboard>
-        <div>c0r0</div>
-        <div>c0r1</div>
-        <div>c0r2</div>
-        <div>c0r3</div>
-        <div>c0r4</div>
-        <div>c0r5</div>
-        <div>c0r6</div>
-        <div>c0r7</div>
-        <div>c1r0</div>
-        <div>c1r1</div>
-        <div>c1r2</div>
-        <div>c1r3</div>
-        <div>c1r4</div>
-        <div>c1r5</div>
-        <div>c1r6</div>
-        <div>c1r7</div>
-        <div>c2r0</div>
-        <div>c2r1</div>
-        <div>c2r2</div>
-        <div>c2r3</div>
-        <div>c2r4</div>
-        <div>c2r5</div>
-        <div>c2r6</div>
-        <div>c2r7</div>
-        <div>c2r0</div>
-        <div>c3r1</div>
-        <div>c3r2</div>
-        <div>c3r3</div>
-        <div>c3r4</div>
-        <div>c3r5</div>
-        <div>c3r6</div>
-        <div>c3r7</div>
-        <div>c4r0</div>
-        <div>c4r1</div>
-        <div>c4r2</div>
-        <div>c4r3</div>
-        <div>c4r4</div>
-        <div>c4r5</div>
-        <div>c4r6</div>
-        <div>c4r7</div>
-        <div>c5r0</div>
-        <div>c5r1</div>
-        <div>c5r2</div>
-        <div>c5r3</div>
-        <div>c5r4</div>
-        <div>c5r5</div>
-        <div>c5r6</div>
-        <div>c5r7</div>
-        <div>c6r0</div>
-        <div>c6r1</div>
-        <div>c6r2</div>
-        <div>c6r3</div>
-        <div>c6r4</div>
-        <div>c6r5</div>
-        <div>c6r6</div>
-        <div>c6r7</div>
-        <div>c7r0</div>
-        <div>c7r1</div>
-        <div>c7r2</div>
-        <div>c7r3</div>
-        <div>c7r4</div>
-        <div>c7r5</div>
-        <div>c7r6</div>
-        <div>c7r7</div>
-    </chessboard>
     <gameName>Checkers</gameName>
     <player1>Player 1</player1>
     <player2>Player 2</player2>
+    <p>It is <span id="player"></span>'s turn</p>
+    <p id="info-display"></p>
+    <checkBoard>
+        <div id="square">c0r0</div>
+        <div id="square">c0r1</div>
+        <div id="square">c0r2</div>
+        <div id="square">c0r3</div>
+        <div id="square">c0r4</div>
+        <div id="square">c0r5</div>
+        <div id="square">c0r6</div>
+        <div id="square">c0r7</div>
+        <div id="square">c1r0</div>
+        <div id="square">c1r1</div>
+        <div id="square">c1r2</div>
+        <div id="square">c1r3</div>
+        <div id="square">c1r4</div>
+        <div id="square">c1r5</div>
+        <div id="square">c1r6</div>
+        <div id="square">c1r7</div>
+        <div id="square">c2r0</div>
+        <div id="square">c2r1</div>
+        <div id="square">c2r2</div>
+        <div id="square">c2r3</div>
+        <div id="square">c2r4</div>
+        <div id="square">c2r5</div>
+        <div id="square">c2r6</div>
+        <div id="square">c2r7</div>
+        <div id="square">c2r0</div>
+        <div id="square">c3r1</div>
+        <div id="square">c3r2</div>
+        <div id="square">c3r3</div>
+        <div id="square">c3r4</div>
+        <div id="square">c3r5</div>
+        <div id="square">c3r6</div>
+        <div id="square">c3r7</div>
+        <div id="square">c4r0</div>
+        <div id="square">c4r1</div>
+        <div id="square">c4r2</div>
+        <div id="square">c4r3</div>
+        <div id="square">c4r4</div>
+        <div id="square">c4r5</div>
+        <div id="square">c4r6</div>
+        <div id="square">c4r7</div>
+        <div id="square">c5r0</div>
+        <div id="square">c5r1</div>
+        <div id="square">c5r2</div>
+        <div id="square">c5r3</div>
+        <div id="square">c5r4</div>
+        <div id="square">c5r5</div>
+        <div id="square">c5r6</div>
+        <div id="square">c5r7</div>
+        <div id="square">c6r0</div>
+        <div id="square">c6r1</div>
+        <div id="square">c6r2</div>
+        <div id="square">c6r3</div>
+        <div id="square">c6r4</div>
+        <div id="square">c6r5</div>
+        <div id="square">c6r6</div>
+        <div id="square">c6r7</div>
+        <div id="square">c7r0</div>
+        <div id="square">c7r1</div>
+        <div id="square">c7r2</div>
+        <div id="square">c7r3</div>
+        <div id="square">c7r4</div>
+        <div id="square">c7r5</div>
+        <div id="square">c7r6</div>
+        <div id="square">c7r7</div>
+    </chessboard>
 </body>
 </html>
