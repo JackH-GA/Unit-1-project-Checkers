@@ -4,9 +4,8 @@
 
 body {
     margin: 0;
-    padding: 15%;
+    padding: 10%;
     font-family: Helvetica;
-    /* height: 100vh; */
     background-color: teal;
     display: flex;
     justify-content: center;
@@ -20,12 +19,51 @@ body {
     player2
 }
 
-#gameName {
-    display: grid;
+.gameName {
+    display: flex;
     flex-direction: center;
     justify-content: center;
     background-color: rgb(194, 46, 16);
     grid-area: h1;
+    border-radius: 35%;
+    padding: 30px;
+}
+
+.checkBoard {
+    height: 550px;
+    width: 550px;
+    border-radius: 30px;
+    border-color: rgb(114, 26, 26);
+    display: inline-grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: rgb(139, 13, 13);
+    grid-area: checkBoard;
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+    /* color: red; */
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0%;
+    padding: 0%; 
+    border-spacing: 0%; */
+    
+    /* grid-area:
+c0r0, c1r0, c2r0, c3r0, c4r0, c5r0, c6r0, c7r0,
+c0r1, c1r1, c2r1, c3r1, c4r1, c5r1, c6r1, c7r1,
+c0r2, c1r2, c2r2, c3r2, c4r2, c5r2, c6r2, c7r2,
+c0r3, c1r3, c2r3, c3r3, c4r3, c5r3, c6r3, c7r3,
+c0r4, c1r4, c2r4, c3r4, c4r4, c5r4, c6r4, c7r4,
+c0r5, c1r5, c2r5, c3r5, c4r5, c5r5, c6r5, c7r5,
+c0r6, c1r6, c2r6, c3r6, c4r6, c5r6, c6r6, c7r6,
+c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7   */
 }
 
 player1 {
@@ -38,7 +76,9 @@ player1 {
     background-color: white;
     border-radius: 50px;
     
+    
 }
+
 
 player2{
     display: grid;
@@ -50,39 +90,6 @@ player2{
     border-radius: 50px;
 }
 
-checkBoard {
-    height: 500px;
-    width: 500px;
-    border-radius: 30px;
-    border-color: rgb(114, 26, 26);
-    padding: 2.5%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background-color: rgb(139, 13, 13);
-    grid-area: checkBoard;
-}
-
-checkBoard #square {
-    height: 58px;
-    width: 58px;
-    /* color: red; */
-    display: grid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area:
-c0r0, c1r0, c2r0, c3r0, c4r0, c5r0, c6r0, c7r0,
-c0r1, c1r1, c2r1, c3r1, c4r1, c5r1, c6r1, c7r1,
-c0r2, c1r2, c2r2, c3r2, c4r2, c5r2, c6r2, c7r2,
-c0r3, c1r3, c2r3, c3r3, c4r3, c5r3, c6r3, c7r3,
-c0r4, c1r4, c2r4, c3r4, c4r4, c5r4, c6r4, c7r4,
-c0r5, c1r5, c2r5, c3r5, c4r5, c5r5, c6r5, c7r5,
-c0r6, c1r6, c2r6, c3r6, c4r6, c5r6, c6r6, c7r6,
-c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7  
-}
 
 .red {
     background-color: red;
@@ -109,5 +116,4 @@ c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7
     align-items: center;
     height: 40px;
     width: 40px;
-    
 }

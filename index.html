@@ -1,131 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkers!</title>
-    <link href='style.css' rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1 id="gameName">Checkers</h1>
-    <player1>Player 1</player1>
-    <player2>Player 2</player2>
-    <p>It is <span id="player"></span>'s turn</p>
-    <p id="info-display"></p>
-    <checkBoard>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkers!</title>
+        <link href='style.css' rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="gameName">Checkers</h1>
+        <p>It is <span id="player"></span>'s turn</p>
+        <p id="info-display"></p>
+        <player1>Player 1</player1>
+        <div class="checkBoard">
+            <div class="black square" id="0">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="1"></div>
+            <div class="black square" id="2">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="3"></div>
+            <div class="black square" id="4">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="5"></div>
+            <div class="black square" id="6">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="7"></div>
+            <div class="red square" id="8"></div>
+            <div class="black square" id="9">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="10"></div>
+            <div class="black square" id="11">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="12"></div>
+            <div class="black square" id="13">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="14"></div>
+            <div class="black square" id="15">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="black square" id="16">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="17"></div>
+            <div class="black square" id="18">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="19"></div>
+            <div class="black square" id="20">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="21"></div>
+            <div class="black square" id="22">
+                <div class="p1Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="23"></div>
+            <div class="red square" id="24"></div>
+            <div class="black square" id="25"></div>
+            <div class="red square" id="26"></div>
+            <div class="black square" id="27"></div>
+            <div class="red square" id="28"></div>
+            <div class="black square" id="29"></div>
+            <div class="red square" id="30"></div>
+            <div class="black square" id="31"></div>
+            <div class="black square" id="32"></div>
+            <div class="red square" id="33"></div>
+            <div class="black square" id="34"></div>
+            <div class="red square" id="35"></div>
+            <div class="black square" id="36"></div>
+            <div class="red square" id="37"></div>
+            <div class="black square" id="38"></div>
+            <div class="red square" id="39"></div>
+            <div class="red square" id="40"></div>
+            <div class="black square" id="41">
+                <div class="p2Piece"></div>
+            </div>
+            <div class="red square" id="42"></div>
+            <div class="black square" id="43">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="44"></div>
+            <div class="black square" id="45">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="46"></div>
+            <div class="black square" id="47">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="black square" id="48">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="49"></div>
+            <div class="black square" id="50">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="51"></div>
+            <div class="black square" id="52">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="53"></div>
+            <div class="black square" id="54">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="55"></div>
+            <div class="red square" id="56"></div>
+            <div class="black square" id="57">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="58"></div>
+            <div class="black square" id="59">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="60"></div>
+            <div class="black square" id="61">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
+            <div class="red square" id="62"></div>
+            <div class="black square" id="63">
+                <div class="p2Piece" draggable="true"></div>
+            </div>
         </div>
-        <div class="red" id="square">c0r1</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c0r3</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c0r5</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c0r7</div>
-        <div class="red" id="square">c1r0</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c1r2</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c1r4</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c1r6</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c2r1</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c2r3</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c2r5</div>
-        <div class="black" id="square">
-            <div class="p1Piece"></div>
-        </div>
-        <div class="red" id="square">c2r7</div>
-        <div class="red" id="square">c2r0</div>
-        <div class="black" id="square">c3r1</div>
-        <div class="red" id="square">c3r2</div>
-        <div class="black" id="square">c3r3</div>
-        <div class="red" id="square">c3r4</div>
-        <div class="black" id="square">c3r5</div>
-        <div class="red" id="square">c3r6</div>
-        <div class="black" id="square">c3r7</div>
-        <div class="black" id="square">c4r0</div>
-        <div class="red" id="square">c4r1</div>
-        <div class="black" id="square">c4r2</div>
-        <div class="red" id="square">c4r3</div>
-        <div class="black" id="square">c4r4</div>
-        <div class="red" id="square">c4r5</div>
-        <div class="black" id="square">c4r6</div>
-        <div class="red" id="square">c4r7</div>
-        <div class="red" id="square">c5r0</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c5r2</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c5r4</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c5r6</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c6r1</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c6r3</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c6r5</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c6r7</div>
-        <div class="red" id="square">c7r0</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c7r2</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c7r4</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-        <div class="red" id="square">c7r6</div>
-        <div class="black" id="square">
-            <div class="p2Piece"></div>
-        </div>
-    </chessboard>
+        <player2>Player 2</player2>
 </body>
 </html>
