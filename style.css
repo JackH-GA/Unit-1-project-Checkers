@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     grid-template-areas: 
     h1,
-    playerTurn, 
     player1,
     checkBoard,
     player2
