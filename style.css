@@ -98,7 +98,7 @@ player2{
     background-color: black;
 }
 
-.p1Piece {
+.piece.p1 {
     border-radius: 50%;
     background-color: white;
     display: grid;
@@ -108,7 +108,7 @@ player2{
     width: 40px;
 }
 
-.p2Piece {
+.piece.p2 {
     border-radius: 50%;
     background-color: brown;
     justify-content: center;
