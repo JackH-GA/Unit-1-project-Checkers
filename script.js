@@ -25,18 +25,16 @@ const allSquares = document.querySelectorAll(".square");
 //this const contains all the 64 squares of the gameboard and their child elements (player pieces)
 
 allSquares.forEach((square) => { 
-    square.addEventListener('dragstart', dragStart);
-    square.addEventListener('dragover', dragOver);
-    square.addEventListener('drop', dragDrop)
+    square.addEventListener('onclick', onclick);
 });
 
 let startPieceId
-let dragElement
+let clickBegin
 
-function dragStart(e) {
+function onClick(e) {
     startPieceId = e.target.parentNode.getAttribute('square-id');
     console.log(startPieceId);
-    dragElement = e.target;
+    clickBegin = e.target;
 }
 
 function dragOver(e) {
