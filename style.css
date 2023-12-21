@@ -1,118 +1,137 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 10%;
-    font-family: Helvetica;
-    background-color: teal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    grid-template-areas: 
-    h1,
-    player1,
-    checkBoard,
-    player2
-}
-
-.gameName {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    background-color: rgb(194, 46, 16);
-    grid-area: h1;
-    border-radius: 35%;
-    padding: 30px;
-}
-
-.checkBoard {
-    height: 550px;
-    width: 550px;
-    border-radius: 30px;
-    border-color: rgb(114, 26, 26);
-    display: inline-grid;
-    /* justify-content: center; */
-    /* align-items: center; */
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background-color: rgb(139, 13, 13);
-    grid-area: checkBoard;
-}
-
 .square {
-    height: 100%;
+    float: left;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .white-square {
+    background-color: #eccdea;
+  }
+  .black-square {
+    background-color: #894096;
+  }
+  .clear-float {
+    clear: both;
+  }
+  
+  .table {
+    position: relative;
+    width: 640px;
+    height: 640px;
+    margin: 0 auto;
+    border: 4px solid #894096;
+  }
+  
+  .player {
+    top: 10px;
+    left: 10px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .current-team {
+    cursor: pointer;
+  }
+  
+  .white-player {
+    background: white;
+  }
+  
+  .black-player {
+    background: black;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  .clicked {
+    border: 4px solid gray;
+  }
+  .potential {
+    background-color: gray;
+  }
+  
+  body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #info-board {
+    width: 420px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: #eccdea;
+    margin: 0;
+  }
+  
+  #score-board {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+  }
+  
+  td,
+  th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .highligh-name {
+    background: khaki;
+  }
+  
+  #cancel {
+    padding-top: 30px;
+    height: 40px;
+    position: relative;
+  }
+  
+  #cancel-btn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #894096;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+  }
+  
+  #winner {
+    position: fixed;
+    display: none;
     width: 100%;
-    /* color: red; */
-    /* display: grid; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0%;
-    padding: 0%; 
-    border-spacing: 0%; */
-    
-    /* grid-area:
-c0r0, c1r0, c2r0, c3r0, c4r0, c5r0, c6r0, c7r0,
-c0r1, c1r1, c2r1, c3r1, c4r1, c5r1, c6r1, c7r1,
-c0r2, c1r2, c2r2, c3r2, c4r2, c5r2, c6r2, c7r2,
-c0r3, c1r3, c2r3, c3r3, c4r3, c5r3, c6r3, c7r3,
-c0r4, c1r4, c2r4, c3r4, c4r4, c5r4, c6r4, c7r4,
-c0r5, c1r5, c2r5, c3r5, c4r5, c5r5, c6r5, c7r5,
-c0r6, c1r6, c2r6, c3r6, c4r6, c5r6, c6r6, c7r6,
-c0r7, c1r7, c2r7, c3r7, c4r7, c5r7, c6r7, c7r7   */
-}
-
-player1 {
-    display: flex;
-    display: grid;
-    flex-direction: center;
-    justify-content: center;
-    padding: 20px;
-    grid-area: player1;
-    background-color: white;
-    border-radius: 50px;
-    
-    
-}
-
-
-player2{
-    display: grid;
-    flex-direction: center;
-    justify-content: center;
-    padding: 20px;
-    grid-area: player2;
-    background-color: brown;
-    border-radius: 50px;
-}
-
-
-.red {
-    background-color: red;
-}
-
-.black {
-    background-color: black;
-}
-
-.piece.p1 {
-    border-radius: 50%;
-    background-color: white;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-}
-
-.piece.p2 {
-    border-radius: 50%;
-    background-color: brown;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-}
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #textwin {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    color: whitesmoke;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  #wrong-move {
+    text-align: center;
+    color: red;
+  }
+  

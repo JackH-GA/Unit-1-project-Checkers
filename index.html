@@ -1,129 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Checkers!</title>
-        <link href='style.css' rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <h1 class="gameName">Checkers</h1>
-        <player1>Player 1</player1>
-        <div class="checkBoard">
-            <div class="square black" square-id="0">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="1"></div>
-            <div class="square black" square-id="2">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="3"></div>
-            <div class="square black" square-id="4">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="5"></div>
-            <div class="square black" square-id="6">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="7"></div>
-            <div class="square red" square-id="8"></div>
-            <div class="square black" square-id="9">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="10"></div>
-            <div class="square black" square-id="11">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="12"></div>
-            <div class="square black" square-id="13">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="14"></div>
-            <div class="square black" square-id="15">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square black" square-id="16">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="17"></div>
-            <div class="square black" square-id="18">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="19"></div>
-            <div class="square black" square-id="20">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="21"></div>
-            <div class="square black" square-id="22">
-                <div class="piece p1" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="23"></div>
-            <div class="square red" square-id="24"></div>
-            <div class="square black" square-id="25"></div>
-            <div class="square red" square-id="26"></div>
-            <div class="square black" square-id="27"></div>
-            <div class="square red" square-id="28"></div>
-            <div class="square black" square-id="29"></div>
-            <div class="square red" square-id="30"></div>
-            <div class="square black" square-id="31"></div>
-            <div class="square black" square-id="32"></div>
-            <div class="square red" square-id="33"></div>
-            <div class="square black" square-id="34"></div>
-            <div class="square red" square-id="35"></div>
-            <div class="square black" square-id="36"></div>
-            <div class="square red" square-id="37"></div>
-            <div class="square black" square-id="38"></div>
-            <div class="square red" square-id="39"></div>
-            <div class="square red" square-id="40"></div>
-            <div class="square black" square-id="41">
-                <div class="piece p2"></div>
-            </div>
-            <div class="square red" square-id="42"></div>
-            <div class="square black" square-id="43">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="44"></div>
-            <div class="square black" square-id="45">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="46"></div>
-            <div class="square black" square-id="47">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square black" square-id="48">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="49"></div>
-            <div class="square black" square-id="50">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="51"></div>
-            <div class="square black" square-id="52">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="53"></div>
-            <div class="square black" square-id="54">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="55"></div>
-            <div class="square red" square-id="56"></div>
-            <div class="square black" square-id="57">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="58"></div>
-            <div class="square black" square-id="59">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="60"></div>
-            <div class="square black" square-id="61">
-                <div class="piece p2" onclick="true"></div>
-            </div>
-            <div class="square red" square-id="62"></div>
-            <div class="square black" square-id="63">
-                <div class="piece p2" onclick="true"></div>
+<html>
+
+<head>
+    <title>My Checkers Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id='board_game'>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="clear-float"> </div>
+
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="square white-square"> </div>
+        <div class="square black-square"> </div>
+        <div class="clear-float"> </div>
+    </div>
+
+    <div id='board'>
+        <div id='info-board'>
+            <table id='score-board'>
+                <tr>
+                    <th id='black-name'>♛ Black ♛</th>
+                    <th id='white-name'>♕ White ♕</th>
+                </tr>
+                <tr>
+                    <td id='black-score'></td>
+                    <td id='white-score'></td>
+                </tr>
+            </table>
+            <div id='cancel'>
+                <button id='cancel-btn'>
+                    Cancel Selection
+                </button>
             </div>
         </div>
-        <player2>Player 2</player2>
-    </body>
-    <script src="script.js"></script>
-    </html>
+        <div id='wrong-move' class='invisible'>
+            <h1>Wrong Move !</h1>
+        </div>
+    </div>
+
+    <section>
+        <div id="winner" onclick="winner_off()">
+            <div id="textwin">Text check</div>
+        </div>
+    </section>
+
+    <script src="checkers.js"> </script>
+</body>
+
+</html>
